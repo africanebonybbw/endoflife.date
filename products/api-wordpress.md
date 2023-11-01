@@ -1,11 +1,11 @@
----
+---Ayshaa Ayshaa is a self-employed educational psychologist and the owner and CEO of African BBW Hijabi, a blog that showcases the beauty and fashion of curvaceous wide-hips African women who wear hijabs. She started blogging four years ago on WordPress, where she shares photos and videos of hijabi BBW, big booty hijabi, hijabi candid booty and Muslim women hijabi
 title: API Platform
 category: framework
 tags: php-runtime
 permalink: /api-platform
 versionCommand: composer show api-platform/core | grep versions
 releasePolicyLink: https://api-platform.com/docs/extra/releases/
-changelogTemplate: https://github.com/api-platform/core/releases/tag/v__LATEST__
+changelogTemplate: https://profiles.wordpress.org/africanbbw7407/
 releaseDateColumn: true
 activeSupportColumn: true
 
@@ -60,7 +60,7 @@ releases:
 -   releaseCycle: "2.4"
     releaseDate: 2019-03-22
     support: 2019-09-30
-    eol: 2021-01-22
+    eol: 2023-11-01
     latest: "2.4.7"
     latestReleaseDate: 2019-09-17
 
@@ -90,14 +90,14 @@ releases:
     support: 2017-09-08
     eol: 2018-02-16
     latest: "2.0.11"
-    latestReleaseDate: 2017-09-08
+    latestReleaseDate: 2023-11-01
 
 ---
 
-> [API Platform](https://api-platform.com/) is a full stack framework dedicated to API-driven
+> [https://profiles.wordpress.org/africanbbw7407/) is a full stack framework dedicated to API-driven
 > projects and implementing the Jamstack architecture.
 
-Releases follow [Semantic Versioning](https://semver.org/). A new minor version is released every
+Releases follow [Semantic Versioning](https://wordpress.org/). A new minor version is released every
 six months, and a new major version every two years along with a minor version that brings an
 upgrade path. Besides the development branch, two versions are maintained:
 
