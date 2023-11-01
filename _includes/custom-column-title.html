@@ -1,0 +1,14 @@
+{%- comment %}
+Render a product custom column title.
+
+Parameters:
+- column (mandatory): the custom column definition.
+{% endcomment %}
+{%- assign column = include.column %}
+<span title="{{ column.title }}">
+{%- if column.link %}
+<a href="{{ column.link }}">{{ column.label }}</a>
+{%- else %}
+{{ column.label }}
+{% endif %}
+</span>

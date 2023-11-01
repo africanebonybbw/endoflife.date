@@ -1,0 +1,9 @@
+{%- comment %}
+Render a product custom column cell (only its content).
+
+Parameters:
+- column (mandatory): the custom column definition.
+{% endcomment %}
+{%- assign release = include.release %}
+{%- assign column = include.column %}
+{{ release[column.key] | default: 'N/A' }}

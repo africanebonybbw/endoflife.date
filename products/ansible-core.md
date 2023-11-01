@@ -5,13 +5,29 @@ iconSlug: ansible
 tags: python-runtime red-hat
 permalink: /ansible-core
 versionCommand: ansible --version
-releasePolicyLink: 
+releasePolicyLink:
   https://docs.ansible.com/ansible-core/devel/reference_appendices/release_and_maintenance.html
-changelogTemplate: 
+changelogTemplate:
   https://github.com/ansible/ansible/blob/stable-__RELEASE_CYCLE__/changelogs/CHANGELOG-v__RELEASE_CYCLE__.rst
 releaseDateColumn: true
 activeSupportColumn: false
 eolColumn: Supported
+customColumns:
+-   key: pythonVersionsControlNode
+    label: Controller Python
+    link: https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html#support-life
+    title: Supported Python version on the control node
+    after: cycle
+-   key: pythonVersionsManagedNode
+    label: Target Python
+    title: Supported Python version on the managed node
+    link: https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html#support-life
+    after: cycle
+-   key: powershellVersionsManagedNode
+    label: Target PowerShell
+    title: Supported PowerShell version on the managed node
+    link: https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html#support-life
+    after: cycle
 
 auto:
 -   git: https://github.com/ansible/ansible.git

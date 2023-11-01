@@ -7,6 +7,17 @@ permalink: /amazon-glue
 releasePolicyLink: https://docs.aws.amazon.com/glue/latest/dg/glue-version-support-policy.html
 releaseDateColumn: true
 releaseColumn: false
+customColumns:
+-   key: pythonVersion
+    label: Python
+    title: Supported Python version
+    link: https://docs.aws.amazon.com/glue/latest/dg/release-notes.html
+    after: cycle
+-   key: sparkVersion
+    label: Spark
+    title: Supported Spark version
+    link: https://docs.aws.amazon.com/glue/latest/dg/release-notes.html
+    after: cycle
 
 # Versions taken from https://docs.aws.amazon.com/glue/latest/dg/release-notes.html
 # EOL dates from https://docs.aws.amazon.com/glue/latest/dg/glue-version-support-policy.html.
@@ -72,11 +83,3 @@ Spark and Python migration guides when upgrading to a newer version of Glue.
 Jobs running on deprecated versions of AWS Glue are not eligible for technical support, security
 patches or any other updates. AWS Glue will also not honor SLAs when jobs are run on deprecated
 versions.
-
-## [Compatibility matrix](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html)
-
-{% include table.html
-labels="Glue version,Python version,Spark version"
-fields="releaseLabel,pythonVersion,sparkVersion"
-types="string,string,string"
-rows=page.releases %}

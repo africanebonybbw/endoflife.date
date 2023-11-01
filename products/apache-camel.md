@@ -11,6 +11,12 @@ changelogTemplate: https://camel.apache.org/releases/release-__LATEST__/
 releaseColumn: true
 releaseDateColumn: true
 eolColumn: Bug and Security Fixes
+customColumns:
+-   key: supportedJavaVersions
+    label: Java
+    title: Supported Java version(s)
+    link: https://camel.apache.org/manual/what-are-the-dependencies.html
+    after: cycle
 
 auto:
 -   maven: org.apache.camel/camel
@@ -214,14 +220,5 @@ releases:
 Apache Camel follows [Semantic Versioning](https://semver.org/). There are two LTS releases per year,
 and they are supported for one year with security and important/critical bug fixes. Non-LTS releases
 [don't receive any support](https://camel.apache.org/blog/2020/03/LTS-Release-Schedule/).
-
-Camel has [the following Java requirements](https://camel.apache.org/manual/what-are-the-dependencies.html):
-
-{%- assign collapsedCycles = page.releases | collapse_cycles:"supportedJavaVersions"," - " %}
-{%- include table.html
-labels="Camel,Java"
-fields="releaseCycle,supportedJavaVersions"
-types="string,string"
-rows=collapsedCycles %}
 
 A list of known CVEs is available [on the security information page](https://camel.apache.org/security/).
